@@ -1,0 +1,36 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+
+# --- Backend data (regeneratable) ---
+backend/data/chroma_kb/*
+!backend/data/chroma_kb/.gitkeep
+backend/data/cache/*
+!backend/data/cache/.gitkeep
+
+# --- NLTK data downloaded at setup time ---
+nltk_data/
+
+# --- Env files ---
+.env
+.env.local
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# --- Test artifacts ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
